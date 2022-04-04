@@ -5,15 +5,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', pagetitle="Home")
+    return render_template('index.html', pageTitle="Home")
 
 @app.route('/about')
 def about():
-    return render_template('about.html',pagetitle="About")
+    return render_template('about.html',pageTitle="About")
 
 @app.route('/estimate')
 def estimate():
-    return render_template('estimate.html',pagetitle="Estimate")
+    return render_template('estimate.html', pageTitle="Estimate")
 
 if __name__ == '__main__':
     app.run(debug=True)
