@@ -5,3 +5,7 @@ body{
 h1{
     background-color: grey; color: white; text-align: left;
 }
+
+li{
+    background-color: gray; color:white;
+}
