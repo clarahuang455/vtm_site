@@ -2,10 +2,6 @@ body{
     background-color: white;
 }
 
-li {
-    border-right:1px solid white;
-}
-
 h1{
-    background-color: grey;
+    background-color: grey; color: white; text-align: left;
 }
