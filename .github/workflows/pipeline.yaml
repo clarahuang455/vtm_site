@@ -88,6 +88,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: "flask-tests" # may need to edit for web app name
+          app-name: "flask-tests" 
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E16734155BF04163B6C12E269CBA9F2E }} # edit for the Azure web app
