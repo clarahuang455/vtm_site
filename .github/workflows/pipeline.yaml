@@ -74,7 +74,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: package
     environment:
-      name: "Production"
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -83,11 +83,11 @@ jobs:
         with:
           name: python-app
           path: .
-
-      - name: "Deploy to Azure Web App"
+          
+      - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: "flask-tests" 
-          slot-name: "Production"
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_68BC761E986F41368D19D1F94402C553 }} # edit for the Azure web app
+          app-name: 'vtm'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_68BC761E986F41368D19D1F94402C553 }}
